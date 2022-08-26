@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <!--Import css-->
+    <link rel="stylesheet" href="{% static '/css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+</head>
+<body>
+    <style>
+        
+    </style>
+    {% include 'navbar.html' %}
+
+    <!--Create Three buttons -->
+    <div class="center">
+        <h1>Product Search</h1>
+        <form method="post">
+          {% csrf_token %}
+          
+          <div class="txt_field">
+            <input type="text" name="keyword">
+            <span></span>
+            <label>Keyword</label>
+          </div>
+          <input type="submit" value="Submit">
+          <div class="signup_link">
+             <a href="#"></a>
+          </div>
+        </form>
+      </div>    
+</body>
+</html>

@@ -1,0 +1,99 @@
+@prefix eeo: <https://github.com/semintelligence/Product-Discovery/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix base: <https://product-search01.herokuapp.com/> .
+
+
+<https://product-search01.herokuapp.com/product/26593/FX506LHBHN355W/Asus> a eeo:Product .
+<https://product-search01.herokuapp.com/product/26593/FX506LHBHN355W/Asus> eeo:hasSerialNumber "FX506LHB-HN355W"^^<http://www.w3.org/2001/XMLSchema#int>;
+eeo:image <https://rukminim1.flixcart.com/image/416/416/kz4gh3k0/computer/n/e/x/fx506lh-hn258ws-gaming-laptop-asus-original-imagb7hfzhmv6v9y.jpeg?q=70> ;
+eeo:hasTitle "ASUS VivoBook Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home) X415EA-EK342WS Thin and Light Laptop  (14 Inch, Transparent Silver, 1.60 Kg, With MS Office)";
+eeo:hasMRP "37990"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+
+<https://product-search01.herokuapp.com/brand/Asus> a gr:Brand .
+<https://product-search01.herokuapp.com/product/26593/FX506LHBHN355W/Asus> eeo:hasBrand <https://product-search01.herokuapp.com/brand/Asus>.
+<https://product-search01.herokuapp.com/brand/Asus> eeo:hasBrandName "Asus" .
+
+<https://product-search01.herokuapp.com/Vendor/Vendor/26593/531.86/Comp1> a eeo:Vendor .
+<https://product-search01.herokuapp.com/product/26593/FX506LHBHN355W/Asus> eeo:hasVendor <https://product-search01.herokuapp.com/Vendor/26593/531.86/Comp1> ;
+                                                                            eeo:hasVendor <https://product-search01.herokuapp.com/Vendor/30000/450/Ret1>.
+
+
+<https://product-search01.herokuapp.com/Vendor/26593/531.86/Comp1> eeo:hasVendorDetials  <https://product-search01.herokuapp.com/VendorDeatils/Comp1>;
+                                                                   eeo:hasVendorProductDetials  <https://product-search01.herokuapp.com/VendorProductDetails/26593/531.86>.
+<https://product-search01.herokuapp.com/VendorDeatils/Comp1> eeo:hasName "Comp1" ;
+                                                            a eeo:OEM .
+
+<https://product-search01.herokuapp.com/VendorProductDetails/26593/531.86> eeo:hasVendorProductPrice "26593"^^<http://www.w3.org/2001/XMLSchema#int>;
+                                                             eeo:hasProductProductQuantity "531.86"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+
+
+<https://product-search01.herokuapp.com/Vendor/30000/450/Ret1> eeo:hasVendorDetials  <https://product-search01.herokuapp.com/VendorDeatils/Ret1>;
+                                                                   eeo:hasVendorProductDetials  <https://product-search01.herokuapp.com/VendorProductDetails/30000/450>.
+<https://product-search01.herokuapp.com/VendorDeatils/Comp1> eeo:hasName "Ret1" ;
+                                                            a eeo:Retailer.
+<https://product-search01.herokuapp.com/VendorProductDetails/30000/450> eeo:hasVendorProductPrice "30000"^^<http://www.w3.org/2001/XMLSchema#int>;
+                                                             eeo:hasProductProductQuantity "450"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+
+
+<https://product-search01.herokuapp.com/device/8/DDR4/512/4.0/Corei5/FX506LHBHN355W> a eeo:Device;
+                                                                        rdfs:subClassOf <https://product-search01.herokuapp.com/product/26593/FX506LHBHN355W/Asus> ;
+                                                                        eeo:color "Black Plastic";
+                                                                        eeo:hasBluetooth "v5.2";
+                                                                        eeo:hasDimension "359 x 256 x 24.9 mm";
+                                                                        eeo:hasFingerPrintSensor "No"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+                                                                        eeo:hasMic "Yes";
+                                                                        eeo:hasModelName "FX506LHB-HN355W";
+                                                                        eeo:ModelNumber "FX506LHB-HN355W";
+                                                                        eeo:hasScreenResolution "1920 x 1080 Pixel";
+                                                                        eeo:hasScreenSize "39.62 cm (15.6 inch)";
+                                                                        eeo:hasScreenType "Full HD, 144 Hz, IPS, Anti-Glare, Brightness 250 nits, 45% NTSC";
+                                                                        eeo:hasSeries "TUF Gaming F15";
+                                                                        eeo:hasSpeaker "Built-in Dual Speakers";
+                                                                        eeo:weight "2.30 Kg"^^<http://www.w3.org/2001/XMLSchema#double>;
+                                                                        eeo:hasWarrentyServiceType "Onsite";
+                                                                        eeo:hasWarrentyYear "1" .
+
+
+<https://product-search01.herokuapp.com/processor/4.0/Corei5> a eeo:Processor .
+<https://product-search01.herokuapp.com/device/8/DDR4/512/4.0/Corei5/FX506LHBHN355W> eeo:hasProcessor <https://product-search01.herokuapp.com/processor/4.0/Corei5> .
+<https://product-search01.herokuapp.com/processor/4.0/Corei5> eeo:hasProcessorBrand "Intel";
+eeo:ProcessorName "Core i5";
+eeo:hasProcessorCore "4.0"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+
+<https://product-search01.herokuapp.com/memory/8/DDR4/512> a eeo:Memory .
+<https://product-search01.herokuapp.com/device/8/DDR4/512/4.0/Corei5/FX506LHBHN355W> eeo:hasMemory <https://product-search01.herokuapp.com/memory/8/DDR4/512>.
+
+
+<https://product-search01.herokuapp.com/PrimaryMemory/8/DDR4> a eeo:PrimaryMemory;
+rdfs:subClassOf <https://product-search01.herokuapp.com/memory/8/DDR4/512>;
+eeo:hasRAMSize "8"^^<http://www.w3.org/2001/XMLSchema#int>;
+eeo:hasRAMType "DDR4";
+eeo:hasClockSpeed "2.50 GHz with Max Turbo Boost Frequency Up to 4.50 GHz" .
+<https://product-search01.herokuapp.com/SecondaryMemory/SSD/512> a eeo:SecondaryMemory;
+rdfs:subClassOf <https://product-search01.herokuapp.com/memory/8/DDR4/512>;
+eeo:hasSMSize "512"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+
+
+
+<https://product-search01.herokuapp.com/laptop/FX506LHBHN355W> a eeo:Laptop;
+rdfs:subClassOf <https://product-search01.herokuapp.com/device/8/DDR4/512/4.0/Corei5/FX506LHBHN355W>;
+eeo:hasGraphicCard "Yes"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+eeo:hasGraphicCardType "NVIDIA GeForce GTX 1650";
+eeo:hasHDMIPort "1 x HDMI 2.0b";
+eeo:hasLaptopType "Gaming Laptop";
+eeo:hasOSArchitecture "64 bit";
+eeo:hasTouchScreen "No"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+eeo:hasUSBPort "1 x USB 2.0 Type-A, 2 x USB 3.2 Gen 1 Type-A, 1 x USB 3.2 Gen 1 Type-C support DisplayPort/ G-SYNC";
+eeo:hasWirelessLAN "Wi-Fi 6(802.11ax) (Dual band) 2*2" .
+
+
+
