@@ -174,11 +174,6 @@ Start the server
   python manage.py runserver
 ```
 
-
-## Acknowledgements
-This work is supported by the IHUB-ANUBHUTI-IIITD FOUNDATION set up under the NM-ICPS scheme of the Department of Science and Technology, India.
-
-
 ## Contacts
 ### Dr. Sarika Jain  (National Institute of Technology, Kurukshetra, India ) 
 -  Email - jasarika@nitkkr.ac.in
