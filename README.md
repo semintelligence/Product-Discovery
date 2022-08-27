@@ -1,5 +1,5 @@
 # Product Search Using Linked Data 
-This project is about how we can incrporate the linked data into a real-world product search engine where different seller and retailers can add thier project and based upon the query of user the relevant products be listed to the user . For this project we kept the domain of our data resticted to the Laptops.
+This project is about how we can incorporate the linked data into a real-world product search engine where different seller and retailers can add thier project and based upon the query of user the relevant products be listed to the user . For this project we kept the domain of our data resticted to the Laptops.
 ## URL
 
 * [http://product-search01.herokuapp.com/](http://product-search01.herokuapp.com/)
