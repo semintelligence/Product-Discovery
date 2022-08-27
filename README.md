@@ -159,7 +159,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd 120-years-olympics
+  cd Product-Discovery
 ```
 
 Install dependencies
